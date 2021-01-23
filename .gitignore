@@ -11,4 +11,4 @@
 *.iml
 .terraform
 .terraform/
-secure
+secure.sh
