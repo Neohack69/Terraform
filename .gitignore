@@ -1,0 +1,13 @@
+/.terraform/providers/registry.terraform.io/hashicorp/aws/3.25.0/windows_amd64/terraform-provider-aws_v3.25.0_x5.exe
+# Default ignored files
+/shelf/
+/workspace.xml
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+*.xml
+*.iml
+.terraform
+.terraform/
