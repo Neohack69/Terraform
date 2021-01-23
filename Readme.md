@@ -1,5 +1,5 @@
 Usage: terraform [global options] <subcommand> [args]
-
+  
 The available commands for execution are listed below.
 The primary workflow commands are given first, followed by
 less common or more advanced commands.
