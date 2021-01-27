@@ -6,14 +6,7 @@ resource "aws_instance" "myUbuntu" {
   ami           = "ami-0a91cd140a1fc148a" # Ubuntu
   instance_type = "t2.micro"
   vpc_security_group_ids = [aws_security_group.myWebServer.id]
-  user_data = <<EOF
-  #!/bin/bash
-  apt-get update
-  apt-get install httpd
-  echo "<h1>My first automated WebServer!!!<h1>" > /var/www/html/index.html
-  sudo service httpd start
-  chkconfig httpd on
-  EOF
+  user_data = file("user_data.sh")
   tags = {
     Name    = "MySimpleWebServer"
     Owner   = "AWS Student"
